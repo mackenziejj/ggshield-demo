@@ -6,6 +6,6 @@ workflows:
   main:
     jobs:
       - gg-shield/scan:
-          name: gg-shield/scan # best practice is to name each orb job
+          name: ggshield-scan # best practice is to name each orb job
           base_revision: << pipeline.git.base_revision >>
           revision: <<pipeline.git.revision>> #not a place holder
