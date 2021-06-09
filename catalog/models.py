@@ -4,6 +4,8 @@ from django.db import models
 
 from django.urls import reverse #Used to generate urls by reversing the URL patterns
 
+# Slack API key
+slack_api_key = "xoxp-905439787527-905447633015-2099134093543-47c9944dc0ba3938a68efff0bdee4e6d"
 
 class Genre(models.Model):
     """
