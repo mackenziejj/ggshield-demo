@@ -23,13 +23,3 @@ jobs:
       - store_artifacts:
           path: test-results
           destination: tr1
-orbs:
-  gg-shield: gitguardian/ggshield
-
-workflows:
-  main:
-    jobs:
-      - gg-shield/scan:
-          name: gg-shield-scan # best practice is to name each orb job
-          base_revision: << pipeline.git.base_revision >>
-          revision: <<pipeline.git.revision>>
